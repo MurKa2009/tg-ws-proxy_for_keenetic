@@ -57,7 +57,7 @@ curl -sL https://raw.githubusercontent.com/MurKa2009/tg-ws-proxy_for_keenetic/ma
 | `/opt/etc/init.d/S99tgwsproxy stop` | Остановить прокси |
 | `/opt/etc/init.d/S99tgwsproxy restart` | Перезапустить прокси |
 | `tail -f /opt/var/log/tgwsproxy.log` | Посмотреть логи |
-| `ps aux | grep tg-ws-proxy` | Проверить, работает ли прокси |
+| `ps aux \| grep tg-ws-proxy` | Проверить, работает ли прокси |
 
 ---
 
