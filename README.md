@@ -14,4 +14,4 @@
 Просто вставьте эту команду в терминал вашего роутера и следуйте инструкции:
 
 ```bash
-curl -sL [https://raw.githubusercontent.com/MurKa2009/tg-ws-proxy-keenetic/main/install.sh](https://raw.githubusercontent.com/MurKa2009/tg-ws-proxy-keenetic/main/install.sh) | sh
+curl -sL https://raw.githubusercontent.com/MurKa2009/tg-ws-proxy_for_keenetic/main/install.sh | sh
