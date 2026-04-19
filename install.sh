@@ -1,17 +1,14 @@
 #!/bin/sh
 
-# Цветной вывод
 GREEN='\033[0;32m'
 NC='\033[0m'
 
 echo -e "${GREEN}===> Начинаем установку TG WS Proxy для Keenetic <===${NC}"
 
-# 1. Установка системных зависимостей
 echo "Установка пакетов Entware..."
 opkg update
 opkg install git git-http python3-light python3-pip python3-cryptography python3-multidict coreutils-nohup
 
-# 2. Клонирование репозитория
 cd /opt/
 if [ -d "/opt/tg-ws-proxy" ]; then
     echo "Папка проекта уже существует, обновляем..."
@@ -21,7 +18,6 @@ else
     cd tg-ws-proxy
 fi
 
-# 3. Установка Python зависимостей
 echo "Установка aiohttp..."
 pip3 install --no-cache-dir aiohttp
 
@@ -40,10 +36,8 @@ case $choice in
     *) LISTEN_IP="0.0.0.0" ;;
 esac
 
-# 5. Генерация секрета
 GEN_SECRET=$(python3 -c 'import secrets; print(secrets.token_hex(16))')
 
-# 6. Создание скрипта автозапуска
 echo "Создание скрипта автозапуска в /opt/etc/init.d/..."
 
 cat <<EOF > /opt/etc/init.d/S99tgwsproxy
