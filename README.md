@@ -82,4 +82,3 @@ curl -sL https://raw.githubusercontent.com/MurKa2009/tg-ws-proxy_for_keenetic/ma
    rm -rf /opt/tg-ws-proxy
    rm /opt/etc/init.d/S99tgwsproxy
    ```
-```
