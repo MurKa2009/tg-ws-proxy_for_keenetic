@@ -77,17 +77,9 @@ curl -sL https://raw.githubusercontent.com/MurKa2009/tg-ws-proxy_for_keenetic/ma
 ---
 
 ## 🆘 Удаление прокси
-
-1. Остановите сервис:
    ```bash
    /opt/etc/init.d/S99tgwsproxy stop
-   ```
-2. Удалите файлы прокси:
-   ```bash
    rm -rf /opt/tg-ws-proxy
-   ```
-3. Удалите скрипт автозапуска:
-   ```bash
    rm /opt/etc/init.d/S99tgwsproxy
    ```
 ```
